@@ -1,8 +1,8 @@
 # Main Service
 
-Os outros serviços podem ser encontrados nos links a seguir:
+Service that makes requests to other services.
 
-## Services
+## Others Services
 
 * [Text Reader Service](https://github.com/thanner/TextReaderService)
 * [Text Writer Service](https://github.com/thanner/TextWriterService)
