@@ -2,8 +2,9 @@
 
 Service that makes requests to other services.
 
-## Others Services
+## Services
 
+* [Main Service](https://github.com/thanner/MainService)
 * [Text Reader Service](https://github.com/thanner/TextReaderService)
 * [Text Writer Service](https://github.com/thanner/TextWriterService)
 * [Process Verification Service](https://github.com/thanner/ProcessVerificationService)
