@@ -1,0 +1,1 @@
+The process starts when the assembler ag sends an order to the supplier. Next, the supplier processes the order and then sends the invoice to the assembler ag. Subsequently, the assembler ag receives the invoice. Finally, the process ends. 

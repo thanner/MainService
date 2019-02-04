@@ -1,0 +1,1 @@
+The process starts when the mpon sends a dismissal. Next, the mpoo reviews the dismissal. Subsequently, one of the 2 alternative procedures is executed. In the first procedure, the mpoo opposes the dismissal of the mpon. In the second procedure, the mpoo confirms the dismissal of the mpon. In any case, the process ends. 

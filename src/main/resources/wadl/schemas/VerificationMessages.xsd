@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:ve="http://br/edu/ufrgs/inf/bpm/verificationmessages"
+           targetNamespace="http://br/edu/ufrgs/inf/bpm/verificationmessages">
+
+    <xs:element name="bpmnVerification" type="ve:tBpmnVerification"/>
+    <xs:complexType name="tBpmnVerification">
+        <xs:sequence>
+            <xs:element name="messageList" type="ve:tMessage" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="message" type="ve:tMessage"/>
+    <xs:complexType name="tMessage">
+        <xs:all>
+            <xs:element name="description" type="xs:string"/>
+        </xs:all>
+        <xs:attribute name="processElementId" type="xs:string"/>
+        <xs:attribute name="messageType" type="xs:string"/>
+        <xs:attribute name="source" type="xs:string"/>
+    </xs:complexType>
+
+</xs:schema>

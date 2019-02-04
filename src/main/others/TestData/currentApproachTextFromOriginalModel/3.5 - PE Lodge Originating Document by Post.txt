@@ -1,0 +1,1 @@
+The Mail Processing Unit waits up to the time limit of Daily. Next, the process starts when it collects a mail and then sorts the unopened mail. Subsequently, the Registry sorts the opened mail and then registers the mail. After that, it checks the mail compliace. In any case, the process ends. 

@@ -1,0 +1,1 @@
+Once a message is received the process starts. Next, the Resource 1 invokes the risk assessor. Subsequently, if required, the Resource 1 invokes the loan approval. In any case, the process ends. 

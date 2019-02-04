@@ -1,0 +1,1 @@
+The process starts when the Employee registers a vacation request. Next, the Boss verifies the available vacation days and then approves the vacation request. Subsequently, one of the 2 alternative procedures is executed. If "no", the Employee informs the reject reason. If "yes", the Human resource assistant makes the administrative task. In any case, the process ends. 

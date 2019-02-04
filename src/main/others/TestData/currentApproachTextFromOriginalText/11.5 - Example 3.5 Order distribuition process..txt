@@ -1,0 +1,1 @@
+The process starts when the Resource 1 companies the has two warehouses. Next, it stores the different products and then receives the order. Subsequently, if required, the Resource 1 distributes that the . After that, the Resource 1 ises the send and then sends a sub-order to the there. Next, if required, the Resource 1 registers the order. In any case, the process ends. 

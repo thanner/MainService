@@ -1,0 +1,1 @@
+The process starts when the mpon requests a device takeover bid of the mpoo. Next, the mpoo sends a tender to the mpon and then the mpon places the order. Subsequently, it confirms the order of the mpon and then sends the master data. Finally, the process ends. 

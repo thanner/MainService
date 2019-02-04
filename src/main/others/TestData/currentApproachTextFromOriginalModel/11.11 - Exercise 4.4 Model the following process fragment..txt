@@ -1,0 +1,1 @@
+The process starts when the Resource 2 checks a witnesses. Next, it obtains the statement from the witness and then lodges the insurance claim. Finally, the process ends. 

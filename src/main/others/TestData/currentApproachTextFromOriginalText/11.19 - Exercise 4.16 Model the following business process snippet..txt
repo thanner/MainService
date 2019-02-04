@@ -1,0 +1,1 @@
+The process starts when the Resource 1 monitors the stock price variations in a stock exchange. Next, it rings and then rings. Subsequently, it changes and then determines the entity of the change. After that, if required, the Resource 1 sends a high stock price alert. Next, the Resource 1 sends a low stock price alert. In any case, the process ends. 

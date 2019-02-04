@@ -1,0 +1,1 @@
+The process starts when the Resource 1 searches a police report database. Next, it composes the file and then calculates the claim estimate. Subsequently, it creates the action plan and then negotiates the estimate settlement. After that, it notifies the claimant. Finally, the process ends. 

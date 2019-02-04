@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:body>
+    <h3>JSF 2.0 + Ajax Hello World Example</h3>
+
+    <h:form>
+        <h:inputText id="name" value="#{ajaxExampleBean.name}"/>
+        <h:commandButton value="Welcome Me">
+            <f:ajax execute="name" render="output"/>
+        </h:commandButton>
+
+        <h2><h:outputText id="output" value="#{ajaxExampleBean.sayWelcome}"/></h2>
+    </h:form>
+
+    <!-- COMO SERIA O FORMULÁRIO -->
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="row" style="margin-top:6em;">
+
+                <h:form enctype="multipart/form-data">
+                    <h:commandLink value="Upload" styleClass="btn btn-primary btn-round"
+                                   action="#{mainBean.upload}">
+                        <i class="material-icons">unarchive</i>
+                    </h:commandLink>
+                </h:form>
+            </div>
+            <div class="row" style="margin-top:1em; margin-bottom:1em">
+                <h:form prependId="false">
+
+                    <h:inputTextarea id="inputtextelement" styleClass="form-control" a:placeholder="Put here your text"
+                                     value="#{mainBean.unstructuredText}" rows="22"/>
+
+                    <h:outputText id="outputMyText" value="#{mainBean.showText}"/>
+
+                    <div class="col-xs-3">
+                        <h:commandButton styleClass="btn btn-primary btn-round" value="Convert">
+                            <f:ajax execute="inputtextelement" render="outputMyText"/>
+                        </h:commandButton>
+
+                    </div>
+                </h:form>
+            </div>
+        </div>
+    </div>
+
+</h:body>
+</html>

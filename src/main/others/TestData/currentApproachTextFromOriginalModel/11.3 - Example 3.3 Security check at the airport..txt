@@ -1,0 +1,1 @@
+The process starts when the Resource 1 proceeds to the security check. Next, 2 procedures are executed in an arbitrary order. The Resource 1 passes the security screening. In the meantime, the Resource 1 passes the luggage screening. After each case, the Resource 1 proceeds to the departure level. Finally, the process ends. 

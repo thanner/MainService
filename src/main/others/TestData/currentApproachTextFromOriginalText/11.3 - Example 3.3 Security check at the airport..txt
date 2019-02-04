@@ -1,0 +1,1 @@
+The process starts when the passengers receives the boarding pass. Next, it proceeds to the security check and then needs to pass the personal security screening. Subsequently, it proceeds to the departure level. Finally, the process ends. 

@@ -1,0 +1,44 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+
+    <!-- Sidebar Representation Mark -->
+    <div id="text-marker-wrapper" class="wrapper">
+        <div class="sidebar-wrapper">
+            <div style="margin-top: 20px"/>
+            <ui:include src="sidebar-content/text-markers.xhtml"/>
+        </div>
+    </div>
+    <!-- Sidebar Representation Structuring -->
+    <div id="text-structuring-wrapper" class="wrapper">
+        <div class="sidebar-wrapper">
+            <div style="margin-top: 20px"/>
+            <ui:include src="sidebar-content/text-structuring.xhtml"/>
+        </div>
+    </div>
+    <!-- Sidebar Bpmn Verification -->
+    <div id="bpmn-verification-wrapper" class="wrapper">
+        <div class="sidebar-wrapper">
+            <div style="margin-top: 20px"/>
+            <ui:include src="sidebar-content/bpmn-verification.xhtml"/>
+        </div>
+    </div>
+
+    <!-- Center -->
+    <div class="wrapper">
+        <div class="header header-filter"
+             style="background-image: url('resources/img/ufrgs.jpg');
+             background-position-y: -30em"/>
+        <div class="main main-raised">
+            <div class="profile-content">
+                <div class="container">
+                    <div class="row">
+                        <ui:include src="left-tab.xhtml"/>
+                        <ui:include src="right-tab.xhtml"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</ui:composition>

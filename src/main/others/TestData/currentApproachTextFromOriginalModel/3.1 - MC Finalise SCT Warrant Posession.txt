@@ -1,0 +1,1 @@
+The process starts when the Client Service Back Office retrieves a sct file. Next, it distributes the sct warrant possession and then stores the sct physycal file. Subsequently, it retrieves the sct file and then attaches the new sct document. After that, it stores the sct physical file. Finally, the process ends. 

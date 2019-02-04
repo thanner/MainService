@@ -1,0 +1,1 @@
+The process starts when the Resource 1 requests of a device takeover bid. Finally, it orders. Once a message is received the process starts. Next, the Resource 2 tenders for the equipment takeover and then confirmations the of order. Finally, the process ends. 

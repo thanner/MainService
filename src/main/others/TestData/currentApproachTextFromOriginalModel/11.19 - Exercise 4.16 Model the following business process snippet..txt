@@ -1,0 +1,1 @@
+The process starts when the Resource 1 monitors a stock price change. The subprocess contains the following steps. The Resource 1 determines the stock change. In any case, the subprocess ends. Finally, the process ends. 

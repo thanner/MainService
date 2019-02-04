@@ -1,0 +1,1 @@
+The process starts when the mspn sends a dismissal. Next, the mspo reviews the dismissal. Subsequently, one of the 2 alternative procedures is executed. In the first procedure, the mspo confirms the dismissal of the mspn. In the second procedure, the mspo rejects the dismissal of the mspn. In any case, the process ends. 

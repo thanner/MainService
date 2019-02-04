@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:ns2="http://www.omg.org/spec/DD/20100524/DI" xmlns:ns4="http://www.omg.org/spec/DD/20100524/DC" xmlns:ns3="http://www.omg.org/spec/BPMN/20100524/DI">
+    <process id="id-0">
+        <task name="check " id="id-1">
+            <incoming>id-8</incoming>
+            <outgoing>id-6</outgoing>
+        </task>
+        <task name="items " id="id-2">
+            <incoming>id-6</incoming>
+            <outgoing>id-7</outgoing>
+        </task>
+        <task name="register the order" id="id-3">
+            <incoming>id-7</incoming>
+            <outgoing>id-9</outgoing>
+        </task>
+        <startEvent id="id-4">
+            <outgoing>id-8</outgoing>
+        </startEvent>
+        <endEvent id="id-5">
+            <incoming>id-9</incoming>
+        </endEvent>
+        <sequenceFlow sourceRef="id-1" targetRef="id-2" name="" id="id-6"/>
+        <sequenceFlow sourceRef="id-2" targetRef="id-3" name="" id="id-7"/>
+        <sequenceFlow sourceRef="id-4" targetRef="id-1" name="" id="id-8"/>
+        <sequenceFlow sourceRef="id-3" targetRef="id-5" name="" id="id-9"/>
+    </process>
+</definitions>

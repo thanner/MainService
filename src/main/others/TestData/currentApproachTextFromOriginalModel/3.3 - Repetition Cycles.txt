@@ -1,0 +1,1 @@
+The process starts when the Resource 1 registers a claim. In any case, it examines the claim and then writes the recommendation. Next, it checks the recommendation. As long as is the Resource 1 repeats the latter steps and continues with writing the recommendation. Subsequently, the process continues. Finally, the process ends. 

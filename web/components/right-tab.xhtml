@@ -1,0 +1,34 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <!-- Right Tab -->
+    <div class="col-xs-6">
+        <ui:include src="right-tab-content/tab-nav.xhtml"/>
+        <div class="row">
+            <!-- Output Representation -->
+            <div class="tab-content gallery col-md-offset-1">
+                <div class="tab-pane active" id="unstructuredmetatextdiv">
+                    <div style="overflow-y: auto; height: 440px; max-width: 100%; overflow-x: hidden;">
+                        <ui:include src="right-tab-content/unstructured-meta-text.xhtml"/>
+                    </div>
+                </div>
+                <div class="tab-pane" id="structuredtextdiv">
+                    <div style="overflow-y: auto; height: 440px; max-width: 100%; overflow-x: hidden;">
+                        <ui:include src="right-tab-content/structured-text.xhtml"/>
+                    </div>
+                </div>
+                <div class="tab-pane" id="errorstextdiv">
+                    <div style="overflow-y: auto; height: 440px; max-width: 100%; overflow-x: hidden;">
+                        <ui:include src="right-tab-content/errors-text.xhtml"/>
+                    </div>
+                </div>
+                <div class="tab-pane" id="bpmnfilediv">
+                    <div style="overflow-y: auto; height: 440px; max-width: 100%; overflow-x: hidden;">
+                        <ui:include src="right-tab-content/bpmn-file.xhtml"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</ui:composition>

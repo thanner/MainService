@@ -1,0 +1,1 @@
+When the process starts, one of the 2 alternative procedures is executed. In the first procedure, the Resource 1 creates the expense report. Next, one of the following alternative procedures is performed. In the first procedure, the Resource 1 processes the expense. In any case, the process ends. 

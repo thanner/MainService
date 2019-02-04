@@ -1,0 +1,1 @@
+The process starts when the inq transmits a transaction. Next, it requests to the ip and then the ip checks the request of the inq. Subsequently, the ip answers the question of the inq. Finally, the process ends. 
