@@ -1,4 +1,4 @@
-package br.edu.ufrgs.inf.bpm;
+package br.edu.ufrgs.inf.bpm.converter;
 
 import br.edu.ufrgs.inf.bpm.textmetadata.*;
 import br.edu.ufrgs.inf.bpm.verificationmessages.TBpmnVerification;
@@ -18,14 +18,14 @@ public class StructuredXmlGenerator {
         StringBuilder structuredXml = new StringBuilder();
 
         structuredXml.append("<text>");
-        if(tMetaText != null) {
+        if (tMetaText != null) {
             for (TSentence sentence : tMetaText.getText().getSentenceList()) {
                 StringBuilder setenceXML = new StringBuilder();
 
                 String sentenceText = sentence.getValue().trim().replaceAll("\"", "&quot;");
 
                 int level = 0;
-                if(sentence.getSnippetList().size() > 0){
+                if (sentence.getSnippetList().size() > 0) {
                     level = sentence.getSnippetList().get(0).getLevel();
                 }
 

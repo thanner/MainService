@@ -1,10 +1,10 @@
 package br.edu.ufrgs.inf.bpm.beans;
 
-import br.edu.ufrgs.inf.bpm.StructuredXmlGenerator;
-import br.edu.ufrgs.inf.bpm.textmetadata.TTextMetadata;
-import br.edu.ufrgs.inf.bpm.rest.bpmnVerification.BpmnVerificationClient;
+import br.edu.ufrgs.inf.bpm.converter.StructuredXmlGenerator;
+import br.edu.ufrgs.inf.bpm.rest.processVerification.ProcessVerificationClient;
 import br.edu.ufrgs.inf.bpm.rest.textReader.TextReaderClient;
 import br.edu.ufrgs.inf.bpm.rest.textWriter.TextWriterClient;
+import br.edu.ufrgs.inf.bpm.textmetadata.TTextMetadata;
 import br.edu.ufrgs.inf.bpm.verificationmessages.TBpmnVerification;
 
 import javax.faces.bean.ManagedBean;
@@ -133,7 +133,7 @@ public class MainBean implements Serializable {
         TextWriterClient processToTextClient = new TextWriterClient();
         TTextMetadata metaText = processToTextClient.getText(this.bpmnFile);
 
-        BpmnVerificationClient processVerificationClient = new BpmnVerificationClient();
+        ProcessVerificationClient processVerificationClient = new ProcessVerificationClient();
         TBpmnVerification verificationElements = processVerificationClient.getVerification(this.bpmnFile);
 
         StructuredXmlGenerator structuredXmlGenerator = new StructuredXmlGenerator();
@@ -191,11 +191,11 @@ public class MainBean implements Serializable {
     }
 
     // TODO: AJAX
-    public String getShowText(){
+    public String getShowText() {
         //check if null?
-        if("".equals(unstructuredText) || unstructuredText ==null){
+        if ("".equals(unstructuredText) || unstructuredText == null) {
             return "";
-        }else{
+        } else {
             return "Ajax message : Welcome " + unstructuredText;
         }
     }

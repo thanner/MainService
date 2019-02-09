@@ -1,10 +1,10 @@
 package br.edu.ufrgs.inf.bpm.application;
 
-import br.edu.ufrgs.inf.bpm.StructuredXmlGenerator;
-import br.edu.ufrgs.inf.bpm.textmetadata.TTextMetadata;
-import br.edu.ufrgs.inf.bpm.rest.bpmnVerification.BpmnVerificationClient;
+import br.edu.ufrgs.inf.bpm.converter.StructuredXmlGenerator;
+import br.edu.ufrgs.inf.bpm.rest.processVerification.ProcessVerificationClient;
 import br.edu.ufrgs.inf.bpm.rest.textReader.TextReaderClient;
 import br.edu.ufrgs.inf.bpm.rest.textWriter.TextWriterClient;
+import br.edu.ufrgs.inf.bpm.textmetadata.TTextMetadata;
 import br.edu.ufrgs.inf.bpm.verificationmessages.TBpmnVerification;
 import org.apache.commons.io.FileUtils;
 
@@ -73,10 +73,10 @@ public class App {
     }
 
     public static TBpmnVerification bpmnVerification(String processBpmn) {
-        BpmnVerificationClient bpmnVerificationClient = new BpmnVerificationClient();
+        ProcessVerificationClient processVerificationClient = new ProcessVerificationClient();
         TBpmnVerification verificationElements = new TBpmnVerification();
         try {
-            verificationElements = bpmnVerificationClient.getVerification(processBpmn);
+            verificationElements = processVerificationClient.getVerification(processBpmn);
             System.out.println("BPMN verification: Verifications");
             System.out.println(verificationElements);
             System.out.println();

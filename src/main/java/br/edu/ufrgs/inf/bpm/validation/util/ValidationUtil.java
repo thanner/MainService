@@ -1,8 +1,8 @@
 package br.edu.ufrgs.inf.bpm.validation.util;
 
-import br.edu.ufrgs.inf.bpm.textmetadata.TTextMetadata;
 import br.edu.ufrgs.inf.bpm.rest.textReader.TextReaderClient;
 import br.edu.ufrgs.inf.bpm.rest.textWriter.TextWriterClient;
+import br.edu.ufrgs.inf.bpm.textmetadata.TTextMetadata;
 import br.edu.ufrgs.inf.bpm.util.Paths;
 import br.edu.ufrgs.inf.bpm.wrapper.JaxbWrapper;
 import org.apache.commons.io.FileUtils;

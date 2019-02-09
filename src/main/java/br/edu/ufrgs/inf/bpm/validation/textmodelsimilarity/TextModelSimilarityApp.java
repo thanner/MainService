@@ -54,7 +54,7 @@ public class TextModelSimilarityApp {
             if (originalModel != null) {
                 TDefinitions processFromOriginalText = ValidationUtil.getModelFromOriginalText(originalText, fileName);
                 if (processFromOriginalText != null) {
-                    if(originalText != null){
+                    if (originalText != null) {
                         SimilarityCalculator similarityCalculator0 = new SimilarityCalculator();
                         similarityData.setSimTextFromOriginalText(similarityCalculator0.calculateSimilarityProcess(originalText, originalModel));
                     }

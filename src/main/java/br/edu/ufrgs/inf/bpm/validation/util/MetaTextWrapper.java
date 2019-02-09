@@ -1,7 +1,7 @@
 package br.edu.ufrgs.inf.bpm.validation.util;
 
-import br.edu.ufrgs.inf.bpm.textmetadata.TTextMetadata;
 import br.edu.ufrgs.inf.bpm.textmetadata.TSentence;
+import br.edu.ufrgs.inf.bpm.textmetadata.TTextMetadata;
 
 public class MetaTextWrapper {
 
