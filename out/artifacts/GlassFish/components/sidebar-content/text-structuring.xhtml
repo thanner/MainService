@@ -1,0 +1,181 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <!-- Representation Structuring -->
+    <div class="row">
+        <div class="col-md-offset-3">
+            <div class="row">
+                <h:outputText value="Text Structuring:"/>
+            </div>
+
+            <h:form prependId="false">
+
+                <!-- Extra Structuring -->
+                <div class="row">
+                    <div class="col-xs-8">
+                        <h:outputText value="Split Resources"/>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="togglebutton">
+                            <label>
+                                <h:selectBooleanCheckbox id="split-resource-checkbox"
+                                                         styleClass="extra-structuring-checkbox text-modifier"/>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-8">
+                        <h:outputText value="Split Gateway"/>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="togglebutton">
+                            <label>
+                                <h:selectBooleanCheckbox id="split-at-gateway-checkbox"
+                                                         styleClass="extra-structuring-checkbox text-modifier"/>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-8">
+                        <h:outputText value="Split Procedure"/>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="togglebutton">
+                            <label>
+                                <h:selectBooleanCheckbox id="split-procedure-checkbox"
+                                                         styleClass="extra-structuring-checkbox text-modifier"/>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-8">
+                        <h:outputText value="Keep Procedure Together"/>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="togglebutton">
+                            <label>
+                                <h:selectBooleanCheckbox id="keep-procedure-together-checkbox"
+                                                         styleClass="extra-structuring-checkbox text-modifier"/>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-8">
+                        <h:outputText value="Paragraph Indentation"/>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="togglebutton">
+                            <label>
+                                <h:selectBooleanCheckbox id="indentation-checkbox"
+                                                         styleClass="extra-structuring-checkbox text-modifier"/>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-8">
+                        <h:outputText value="Bullet Point only new Paragraph"/>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="togglebutton">
+                            <label>
+                                <h:selectBooleanCheckbox id="bullet-point-only-new-paragraph-checkbox"
+                                                         styleClass="extra-structuring-checkbox text-modifier"/>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+
+                <!-- Paragraph Split -->
+                <div class="col-xs-10">
+                    <div class="row">
+                        <h:outputText value="Paragraph Split"/>
+                    </div>
+                    <div class="radio row">
+                        <label>
+                            <input type="radio" value="none" name="option-line-split-radio"
+                                   class="text-modifier text-line-split-radio"/>
+                            None
+                        </label>
+                    </div>
+                    <div class="radio row">
+                        <label class="col-xs-6">
+                            <input type="radio" value="sentence" name="option-line-split-radio"
+                                   class="text-modifier text-line-split-radio" checked="checked"/>
+                            Per sentence
+                        </label>
+                        <label class="col-xs-4">
+                            <input id="per-sentence-input-number" type="number" value="5" min="1" max="2000"
+                                   class="form-inline txtbox-number-filter text-modifier"/>
+                        </label>
+                    </div>
+                    <div class="radio row">
+                        <label class="col-xs-6">
+                            <input type="radio" value="word" name="option-line-split-radio"
+                                   class="text-modifier text-line-split-radio"/>
+                            Per word
+                        </label>
+                        <label class="col-xs-4">
+                            <input id="per-word-input-number" type="number" value="100" min="1" max="2000"
+                                   class="form-inline txtbox-number-filter text-modifier" disabled="disabled"/>
+                        </label>
+                    </div>
+                    <div class="radio row">
+                        <label class="col-xs-6">
+                            <input type="radio" value="level" name="option-line-split-radio"
+                                   class="text-modifier text-line-split-radio"/>
+                            Level
+                        </label>
+                        <div class="col-xs-offset-1 col-xs-2">
+                            <h:outputText value="Tab"/>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="togglebutton">
+                                <label>
+                                    <h:selectBooleanCheckbox id="level-tabs-checkbox" disabled="true"
+                                                             styleClass="text-modifier"/>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bullet Point -->
+                <div class="col-xs-10">
+                    <div class="row">
+                        <h:outputText value="Bullet Point"/>
+                    </div>
+                    <div class="radio row">
+                        <label>
+                            <input type="radio" value="none" name="option-bullet-point-radio"
+                                   class="text-modifier text-bullet-point-radio" checked="checked"/>
+                            None
+                        </label>
+                    </div>
+                    <div class="radio row">
+                        <label>
+                            <input type="radio" value="trace" name="option-bullet-point-radio"
+                                   class="text-modifier text-bullet-point-radio"/>
+                            Trace
+                        </label>
+                    </div>
+                    <div class="radio row">
+                        <label>
+                            <input type="radio" value="number" name="option-bullet-point-radio"
+                                   class="text-modifier text-bullet-point-radio"/>
+                            Number
+                        </label>
+                    </div>
+                </div>
+
+            </h:form>
+        </div>
+    </div>
+
+</ui:composition>
