@@ -12,10 +12,6 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
-// import br.edu.ufrgs.inf.bpm.rest.RestApplication;
-// import org.springframework.http.HttpMethod;
-// import org.springframework.http.MediaType;
-
 public class App {
 
     private static String textPath = "src/main/others/testData/dissertation-example.txt";
